@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  disease: MyString
+  area: MyText
+  latitude: 1.5
+  longitude: 1.5
+  longitude: 1.5
+  active: false
+
+two:
+  disease: MyString
+  area: MyText
+  latitude: 1.5
+  longitude: 1.5
+  longitude: 1.5
+  active: false

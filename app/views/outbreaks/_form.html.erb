@@ -1,0 +1,49 @@
+<%= form_for @outbreak do |f| %>
+  <fieldset class="form-group">
+    <%= f.label :disease %>
+    <%= f.text_field :disease, class: "form-control" %>
+  </fieldset>
+
+   <h4>Enter either address or coordinates</h4>
+
+    <fieldset class="form-group">
+      <%= f.label :raw_address, 'Address' %>
+      <%= f.text_field :raw_address, class: "form-control" %>
+    </fieldset> 
+  
+  
+  
+  <div class="form-group row">
+  <div class="col-sm-1">
+    <%= f.label :latitude %>
+  </div>
+
+  <div class="col-sm-3">
+    <%= f.text_field :latitude, class: "form-control" %>
+  </div>
+  
+  <div class="col-sm-1">
+    <%= f.label :longitude %>
+  </div>
+
+  <div class="col-sm-3">
+    <%= f.text_field :longitude, class: "form-control" %>
+  </div>
+</div class="col-sm-3">
+  <%= label :active, "Status", value: true %>
+  <%= f.radio_button :active, true, :value => true%>
+ </div>
+  <div class="card">
+  <div class="card-block">
+    <div id="map"></div>
+  </div>
+</div>
+  <%= f.submit 'Add!', class: 'btn btn-primary' %>
+<% end %>
+
+
+
+
+
+
+  

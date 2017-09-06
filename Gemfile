@@ -97,3 +97,4 @@ end
 # app related gems 
 
 gem 'devise'
+gem 'geocoder'

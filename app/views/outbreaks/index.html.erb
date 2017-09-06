@@ -1,0 +1,11 @@
+<header><h1 class="display-4">outbreaks</h1></header>
+
+<%= link_to 'Add outbreak', new_outbreak_path, class: 'btn btn-primary btn-lg' %>
+
+<div class="card">
+  <div class="card-block">
+    <ul>
+      <%= render @outbreaks %>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<header><h1 class="display-4"><%= @outbreak.disease %></h1></header>
+
+<p>Address: <%= @outbreak.area %></p>
+<p>Coordinates: <%= @outbreak.latitude %> <%= @outbreak.longitude %></p>
+
+<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@outbreak.latitude},#{@outbreak.longitude}&markers=#{@outbreak.latitude},#{@outbreak.longitude}&zoom=7&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8",
+              class: 'img-fluid img-rounded', alt: "#{@outbreak.disease} on the map"%>
