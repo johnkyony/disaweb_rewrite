@@ -7,7 +7,7 @@ class OutbreaksController < ApplicationController
     @outbreak = Outbreak.new
   end
   
-  def created
+  def create
     @outbreak = Outbreak.new(outbreak_params)
     if @outbreak.save 
       flash[:success] = "Outbreak added"
@@ -24,7 +24,7 @@ class OutbreaksController < ApplicationController
   private 
   
   def outbreak_params
-    params.require(:outbreak).permit(:diseases ,:raw_address,  :area , :latitude , :longitude , :active)
+    params.require(:outbreak).permit(:disease ,:raw_address,  :area , :latitude , :longitude , :active)
     
   end
 end
